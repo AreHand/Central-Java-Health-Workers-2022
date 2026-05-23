@@ -1,6 +1,8 @@
 🏥 Analisis Tenaga Kesehatan Jawa Tengah 2022
 From Raw Data to Health Insight — A Data Analytics Portfolio Project
 
+---
+
 📌 Deskripsi Project
 Project ini merupakan analisis mendalam terhadap distribusi dan ketersediaan tenaga kesehatan
 di seluruh Kabupaten/Kota di Provinsi Jawa Tengah tahun 2022.
@@ -11,10 +13,14 @@ Tujuan utama project ini adalah menjawab pertanyaan kritis:
 Analisis dilakukan menggunakan Google BigQuery untuk pengolahan data SQL,
 dan hasilnya memberikan insight yang relevan untuk kebijakan kesehatan publik.
 
+---
+
 🎯 Problem Statement
 Jawa Tengah memiliki 37 juta jiwa penduduk yang tersebar di 35 Kabupaten/Kota.
 Namun, apakah ketersediaan dokter dan tenaga kesehatan sudah merata?
 Standar WHO menetapkan minimal 1 dokter per 1.000 penduduk sebagai ambang batas layanan kesehatan yang layak.
+
+---
 
 📊 Dataset
 Informasi: Detail
@@ -23,17 +29,18 @@ Jumlah Baris: 35 daerah (29 Kabupaten + 6 Kota)
 Sumber: Data Kesehatan Provinsi Jawa Tengah
 
 Kolom Dataset:
-Kolom                                 Keterangan
-TIPE:                           Jenis daerah (Kab/Kota)
-KABUPATEN_KOTA:                      Nama daerah
-JUMLAH_PENDUDUK:                    Total penduduk
-JUMLAH_TENAGA_GIZI:                Jumlah ahli gizi
-JUMLAH_TENAGA_FARMASI:           Jumlah tenaga farmasi
-JUMLAH_BIDAN:                        Jumlah bidan
-JUMLAH_PERAWAT:                     Jumlah perawat
-JUMLAH_DOKTER_GIGI:               Jumlah dokter gigi
-JUMLAH_DOKTER_SPESIALIS:        Jumlah dokter spesialis
-JUMLAH_DOKTER_UMUM:                jumlah dokter umum
+TIPE: Jenis daerah (Kab/Kota)
+KABUPATEN_KOTA: Nama daerah
+JUMLAH_PENDUDUK: Total penduduk
+JUMLAH_TENAGA_GIZI: Jumlah ahli gizi
+JUMLAH_TENAGA_FARMASI: Jumlah tenaga farmasi
+JUMLAH_BIDAN: Jumlah bidan
+JUMLAH_PERAWAT: Jumlah perawat
+JUMLAH_DOKTER_GIGI: Jumlah dokter gigi
+JUMLAH_DOKTER_SPESIALIS: Jumlah dokter spesialis
+JUMLAH_DOKTER_UMUM: jumlah dokter umum
+
+---
 
 📁 Struktur Repository
 jateng-health-analytics/
@@ -46,6 +53,8 @@ jateng-health-analytics/
     ├── query_q5_rasio_dokter.csv      ← Hasil analisis rasio dokter
     ├── query_q7_spesialis_kota.csv    ← Spesialis per kota
     └── query_bonus_ranking.csv        ← Ranking semua daerah
+
+---
 
 🔍 Hasil Analisis
 Ringkasan Data
@@ -93,13 +102,14 @@ Kota Semarang: 1.283 ✅Mencukupi
 Hanya 3 dari 35 daerah (8.6%) yang memenuhi standar WHO!
 
 Q7 — Dokter Spesialis di Kota-kota Jawa Tengah
-Kota                Dokter Spesialis
-Kota Semarang:           952
-Kota Surakarta:          686
-Kota Magelang:           135
-Kota Salatiga:            88
-Kota Tegal:               60
-Kota Pekalongan:          59
+Kota Semarang: 952 Dokter Spesialis
+Kota Surakarta: 686 Dokter Spesialis
+Kota Magelang: 135 Dokter Spesialis
+Kota Salatiga: 88 Dokter Spesialis
+Kota Tegal: 60 Dokter Spesialis
+Kota Pekalongan: 59 Dokter Spesialis
+
+---
 
 💡 Key Insights
 1. 🚨 Krisis Dokter yang Serius
@@ -120,12 +130,15 @@ Kota Pekalongan:          59
 6. 🗺️ Daerah Perbatasan Paling Rentan
    Kab. Rembang, Kab. Batang, dan Kab. Blora memiliki rasio dokter terendah — penduduk banyak, dokter sangat sedikit. Daerah-daerah ini membutuhkan perhatian prioritas.
 
+---
+
 📈 Rekomendasi
 1. Program dokter daerah terpencil perlu diperkuat untuk kabupaten-kabupaten dengan rasio terendah
 2. Insentif khusus bagi dokter yang mau bertugas di luar kota besar
 3. Peningkatan kapasitas Puskesmas di kabupaten sebagai garda terdepan layanan kesehatan
 4. Pemerataan dokter spesialis ke kota-kota kecil agar tidak semua pasien harus dirujuk ke Semarang/Surakarta
 
+---
 
 👤 Author
 Nama : Dwi Farhan
