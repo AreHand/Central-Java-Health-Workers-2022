@@ -30,7 +30,7 @@ Standar WHO menetapkan minimal 1 dokter per 1.000 penduduk sebagai ambang batas 
 | Jumlah Baris | 35 Daerah (29 Kabupaten + 6 Kota) |
 | Sumber | Data Kesehatan Provinsi Jawa Tengah |
 
-Kolom Dataset:
+## Kolom Dataset:
 | Kolom | Keterangan |
 |---|---|
 | TIPE | Jenis daerah (Kab/Kota) |
@@ -69,55 +69,24 @@ Kolom Dataset:
 Ringkasan Data
 - Total Tenaga Kesehatan: 124,757 orang
 - Total Penduduk: 37,032,410 jiwa
-- Total Kabupaten/Kota: 35 daerah, Hanya **3 dari 35 daerah** yang memenuhi standar rasio dokter WHO
+- Total Kabupaten/Kota: 35 daerah
 - Rata-rata Dokter Umum: 309 dokter per daerah
+
+| Kota Surakarta | 1.648 ✅Mencukupi |
+| Kota Magelang | 1.479 ✅Mencukupi |
+| Kota Semarang | 1.283 ✅Mencukupi |
+
+- **Hanya** 3 dari 35 daerah (8.6%) yang memenuhi standar WHO!
+
+## Dokter Spesialis di Kota-kota Jawa Tengah
+| Semarang | 952 |
+| Surakarta | 686 |
+| magelang | 135 |
+| Salatiga | 88 |
+| Tegal | 60 |
+| Pekalongan | 59 |
+
 - Kota Semarang dominasi dengan **952 dokter spesialis**
-
-Q1 — Total Tenaga Kesehatan Jawa Tengah
-SELECT SUM(JUMLAH_TENAGA_GIZI + JUMLAH_TENAGA_FARMASI + JUMLAH_BIDAN
-         + JUMLAH_PERAWAT + JUMLAH_DOKTER_GIGI
-         + JUMLAH_DOKTER_SPESIALIS + JUMLAH_DOKTER_UMUM)
-         AS total_tenaga_kesehatan
-FROM `jateng_health.tenaga_kesehatan_2022`;
-Result: 124,757 tenaga kesehatan
-
-Q2 — Total Penduduk Jawa Tengah
-SELECT SUM(JUMLAH_PENDUDUK) AS total_penduduk
-FROM `jateng_health.tenaga_kesehatan_2022`;
-Result: 37,032,410 jiwa
-
-Q3 — Total Kabupaten/Kota
-SELECT COUNT(KABUPATEN_KOTA)  AS total_kab_kota,
-       COUNTIF(TIPE = 'Kab')  AS total_kabupaten,
-       COUNTIF(TIPE = 'Kota') AS total_kota
-FROM `jateng_health.tenaga_kesehatan_2022`;
-Result: 35 daerah (29 Kabupaten + 6 Kota)
-
-Q4 — Rata-rata Dokter Umum
-SELECT ROUND(AVG(JUMLAH_DOKTER_UMUM), 2) AS rata_rata_dokter_umum
-FROM `jateng_health.tenaga_kesehatan_2022`;
-Result: 309.14 dokter per daerah
-
-Q5 & Q6 — Daerah dengan Rasio Dokter Mencukupi
-SELECT KABUPATEN_KOTA,
-       ROUND((JUMLAH_DOKTER_UMUM / JUMLAH_PENDUDUK) * 1000, 3) AS rasio_per_1000
-FROM `jateng_health.tenaga_kesehatan_2022`
-WHERE (JUMLAH_DOKTER_UMUM / JUMLAH_PENDUDUK) * 1000 >= 1
-ORDER BY rasio_per_1000 DESC;
-
-Kota Surakarta: 1.648 ✅Mencukupi
-Kota Magelang: 1.479 ✅Mencukupi
-Kota Semarang: 1.283 ✅Mencukupi
-
-Hanya 3 dari 35 daerah (8.6%) yang memenuhi standar WHO!
-
-Q7 — Dokter Spesialis di Kota-kota Jawa Tengah
-Kota Semarang: 952 Dokter Spesialis
-Kota Surakarta: 686 Dokter Spesialis
-Kota Magelang: 135 Dokter Spesialis
-Kota Salatiga: 88 Dokter Spesialis
-Kota Tegal: 60 Dokter Spesialis
-Kota Pekalongan: 59 Dokter Spesialis
 
 ---
 
