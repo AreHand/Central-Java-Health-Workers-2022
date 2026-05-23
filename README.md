@@ -1,9 +1,9 @@
-🏥 Analisis Tenaga Kesehatan Jawa Tengah 2022
-From Raw Data to Health Insight — A Data Analytics Portfolio Project
+#🏥 Analisis Tenaga Kesehatan Jawa Tengah 2022
+**From Raw Data to Health Insight — A Data Analytics Portfolio Project**
 
 ---
 
-📌 Deskripsi Project
+##📌 Deskripsi Project
 Project ini merupakan analisis mendalam terhadap distribusi dan ketersediaan tenaga kesehatan
 di seluruh Kabupaten/Kota di Provinsi Jawa Tengah tahun 2022.
 Tujuan utama project ini adalah menjawab pertanyaan kritis:
@@ -15,7 +15,7 @@ dan hasilnya memberikan insight yang relevan untuk kebijakan kesehatan publik.
 
 ---
 
-🎯 Problem Statement
+##🎯 Problem Statement
 Jawa Tengah memiliki 37 juta jiwa penduduk yang tersebar di 35 Kabupaten/Kota.
 Namun, apakah ketersediaan dokter dan tenaga kesehatan sudah merata?
 Standar WHO menetapkan minimal 1 dokter per 1.000 penduduk sebagai ambang batas layanan kesehatan yang layak.
