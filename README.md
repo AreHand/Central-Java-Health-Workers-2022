@@ -83,22 +83,22 @@ Ringkasan Data
 
 ## 💡 Key Insights
 1. **🚨 Krisis Dokter yang Serius**
-   91.4% daerah di Jawa Tengah belum memenuhi standar WHO (1 dokter per 1.000 penduduk). Dari 35 daerah, hanya 3 yang lolos — semuanya kota besar. Tidak ada satu pun kabupaten yang memenuhi standar.
+91.4% daerah di Jawa Tengah belum memenuhi standar WHO (1 dokter per 1.000 penduduk). Dari 35 daerah, hanya 3 yang lolos — semuanya kota besar. Tidak ada satu pun kabupaten yang memenuhi standar.
 
 2. **🏙️ Kesenjangan Kota vs Kabupaten**
-   Seluruh daerah yang rasionya mencukupi adalah kota. Kabupaten — yang mayoritas penduduknya tinggal di sana — justru paling kekurangan dokter.
+Seluruh daerah yang rasionya mencukupi adalah kota. Kabupaten — yang mayoritas penduduknya tinggal di sana — justru paling kekurangan dokter.
 
 3. **🏥 Dominasi Kota Semarang**
-   Kota Semarang mendominasi hampir semua indikator: dokter umum terbanyak (2.130), spesialis terbanyak (952), dan perawat terbanyak (7.799). Ini mencerminkan konsentrasi layanan kesehatan yang tidak merata.
+Kota Semarang mendominasi hampir semua indikator: dokter umum terbanyak (2.130), spesialis terbanyak (952), dan perawat terbanyak (7.799). Ini mencerminkan konsentrasi layanan kesehatan yang tidak merata.
 
 4. **🔬 Dokter Spesialis Sangat Terkonsentrasi**
-   Lebih dari 80% dokter spesialis di kota-kota Jawa Tengah hanya ada di Semarang dan Surakarta. Daerah lain sangat bergantung pada rujukan ke dua kota ini.
+Lebih dari 80% dokter spesialis di kota-kota Jawa Tengah hanya ada di Semarang dan Surakarta. Daerah lain sangat bergantung pada rujukan ke dua kota ini.
    
 5. **💪 Perawat Adalah Tulang Punggung**
-   Komposisi terbesar tenaga kesehatan adalah perawat. Di daerah kekurangan dokter, perawatlah yang menopang keberlangsungan layanan kesehatan masyarakat.
+Komposisi terbesar tenaga kesehatan adalah perawat. Di daerah kekurangan dokter, perawatlah yang menopang keberlangsungan layanan kesehatan masyarakat.
    
 6. **🗺️ Daerah Perbatasan Paling Rentan**
-   Kab. Rembang, Kab. Batang, dan Kab. Blora memiliki rasio dokter terendah — penduduk banyak, dokter sangat sedikit. Daerah-daerah ini membutuhkan perhatian prioritas.
+Kab. Rembang, Kab. Batang, dan Kab. Blora memiliki rasio dokter terendah — penduduk banyak, dokter sangat sedikit. Daerah-daerah ini membutuhkan perhatian prioritas.
 
 ---
 
