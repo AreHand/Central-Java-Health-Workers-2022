@@ -153,6 +153,6 @@ Kota Pekalongan: 59 Dokter Spesialis
 ---
 
 ## 👤 Author
-Name : Dwi Farhan
-Email : mighty.coord@gmail.com
+Name     : Dwi Farhan
+Email    : mighty.coord@gmail.com
 LinkedIn : linkedin.com/in/dwi-farhan
