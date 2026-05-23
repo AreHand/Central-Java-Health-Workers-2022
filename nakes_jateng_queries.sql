@@ -1,13 +1,13 @@
 -- ================================================
--- PROJECT  : Analisis Tenaga Kesehatan Jawa Tengah
+-- PROJECT  : Central Java Health Workforce Analysis
 -- DATASET  : tenaga_kesehatan_2022
 -- AUTHOR   : Dwi Farhan
--- TAHUN    : 2022
+-- Year     : 2022
 -- ================================================
 
 
 -- ------------------------------------------------
--- Q1: Total Tenaga Kesehatan di Jawa Tengah
+-- Q1: Total Healthcare Personel in Central Java
 -- ------------------------------------------------
 SELECT
   SUM(JUMLAH_TENAGA_GIZI
@@ -18,40 +18,40 @@ SELECT
     + JUMLAH_DOKTER_SPESIALIS
     + JUMLAH_DOKTER_UMUM) AS total_tenaga_kesehatan
 FROM `jateng_health.tenaga_kesehatan_2022`;
--- RESULT: 124,757 orang
+-- RESULT: 124,757 People
 
 
 -- ------------------------------------------------
--- Q2: Total Penduduk Jawa Tengah
+-- Q2: Total Population of Central Java
 -- ------------------------------------------------
 SELECT
   SUM(JUMLAH_PENDUDUK) AS total_penduduk
 FROM `jateng_health.tenaga_kesehatan_2022`;
--- RESULT: 37,032,410 jiwa
+-- RESULT: 37,032,410 People
 
 
 -- ------------------------------------------------
--- Q3: Total Kabupaten/Kota
+-- Q3: Total Regencies/Cities
 -- ------------------------------------------------
 SELECT
   COUNT(KABUPATEN_KOTA)  AS total_kab_kota,
   COUNTIF(TIPE = 'Kab')  AS total_kabupaten,
   COUNTIF(TIPE = 'Kota') AS total_kota
 FROM `jateng_health.tenaga_kesehatan_2022`;
--- RESULT: 35 daerah (29 Kab + 6 Kota)
+-- RESULT: 35 regions (29 Regencies + 6 Cities)
 
 
 -- ------------------------------------------------
--- Q4: Rata-rata Dokter Umum per Kab/Kota
+-- Q4: Average General Practitioners per Regency/City
 -- ------------------------------------------------
 SELECT
   ROUND(AVG(JUMLAH_DOKTER_UMUM), 2) AS rata_rata_dokter_umum
 FROM `jateng_health.tenaga_kesehatan_2022`;
--- RESULT: 309.14 dokter
+-- RESULT: 309.14 doctors
 
 
 -- ------------------------------------------------
--- Q5: Daerah yang Rasio Dokter Mencukupi
+-- Q5: Areas Where the Doctor Ratio is Sufficient
 -- ------------------------------------------------
 SELECT
   KABUPATEN_KOTA,
@@ -62,21 +62,21 @@ SELECT
 FROM `jateng_health.tenaga_kesehatan_2022`
 WHERE (JUMLAH_DOKTER_UMUM / JUMLAH_PENDUDUK) * 1000 >= 1
 ORDER BY rasio_per_1000 DESC;
--- RESULT: Kota Surakarta, Kota Magelang, Kota Semarang
+-- RESULT: Surakarta City, Magelang City, Semarang City
 
 
 -- ------------------------------------------------
--- Q6: Jumlah Daerah yang Rasio Mencukupi
+-- Q6: Number of Regions with Sufficient Ratio
 -- ------------------------------------------------
 SELECT
   COUNT(*) AS daerah_mencukupi
 FROM `jateng_health.tenaga_kesehatan_2022`
 WHERE (JUMLAH_DOKTER_UMUM / JUMLAH_PENDUDUK) * 1000 >= 1;
--- RESULT: 3 dari 35 daerah (8.6%)
+-- RESULT: 3 out of 35 regions (8.6%)
 
 
 -- ------------------------------------------------
--- Q7: Dokter Spesialis di Kota-kota
+-- Q7: Specialist Doctors in Cities
 -- ------------------------------------------------
 SELECT
   KABUPATEN_KOTA,
@@ -91,7 +91,7 @@ ORDER BY JUMLAH_DOKTER_SPESIALIS DESC;
 
 
 -- ------------------------------------------------
--- BONUS: Ranking Semua Daerah + Status Rasio
+-- Ranking of All Regions + Ratio Status
 -- ------------------------------------------------
 SELECT
   KABUPATEN_KOTA,
