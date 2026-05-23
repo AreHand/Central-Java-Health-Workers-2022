@@ -1,74 +1,74 @@
-# 🏥 Analisis Tenaga Kesehatan Jawa Tengah 2022
+# 🏥 Analysis of Health Workers in Central Java 2022
 **From Raw Data to Health Insight — A Data Analytics Portfolio Project**
 
 ---
 
-## 📌 Deskripsi Project
-Project ini merupakan analisis mendalam terhadap distribusi dan ketersediaan tenaga kesehatan
-di seluruh Kabupaten/Kota di Provinsi Jawa Tengah tahun 2022.
-Tujuan utama project ini adalah menjawab pertanyaan kritis:
+## 📌 Project Descriptions
+This project is an in-depth analysis of the distribution and availability of healthcare workers throughout the
+Regencies/Cities in Central Java Province in 2022.
 
-"Apakah tenaga kesehatan di Jawa Tengah sudah terdistribusi secara merata dan mencukupi?"
+The primary goal of this project is to answer critical questions:
 
-Analisis dilakukan menggunakan Google BigQuery untuk pengolahan data SQL,
-dan hasilnya memberikan insight yang relevan untuk kebijakan kesehatan publik.
+"Have healthcare workers in Central Java been distributed evenly and adequately?"
+
+Analysis was conducted using Google BigQuery for SQL data processing, and the results provided relevant insights for
+public health policy.
 
 ---
 
 ## 🎯 Problem Statement
-Jawa Tengah memiliki 37 juta jiwa penduduk yang tersebar di 35 Kabupaten/Kota.
-Namun, apakah ketersediaan dokter dan tenaga kesehatan sudah merata?
-Standar WHO menetapkan minimal 1 dokter per 1.000 penduduk sebagai ambang batas layanan kesehatan yang layak.
+Central Java has a population of 37 million people spread across 35 Regencies/Cities.
+However, is the availability of doctors and healthcare workers evenly distributed? The WHO standard sets a minimum of 1
+doctor per 1,000 people as the threshold for adequate health services.
 
 ---
 
 ## 📊 Dataset
-| Informasi | Detail |
+| Information | Detail |
 |---|---|
-| Nama Dataset | Jumlah Tenaga Kesehatan Jawa Tengah |
-| Tahun | 2022 |
-| Jumlah Baris | 35 Daerah (29 Kabupaten + 6 Kota) |
-| Sumber | Data Kesehatan Provinsi Jawa Tengah |
+| Dataset Name | The Number of Health Workers in Central Java |
+| Year | 2022 |
+| Number of Rows | 35 Regions (29 Regencies + 6 Cities) |
+| Sources | Central Java Province Health Data |
 
-## Kolom Dataset:
-| Kolom | Keterangan |
+## Dataset Column:
+| Column | Descriptions |
 |---|---|
-| TIPE | Jenis daerah (Kab/Kota) |
-| KABUPATEN_KOTA | Nama Daerah |
-| JUMLAH_PENDUDUK | Total Penduduk |
-| JUMLAH_TENAGA_GIZI | Jumlah ahli gizi |
-| JUMLAH_TENAGA_FARMASI | Jumlah tenaga farmasi |
-| JUMLAH_BIDAN | Jumlah bidan |
-| JUMLAH_PERAWAT | Jumlah perawat |
-| JUMLAH_DOKTER_GIGI | Jumlah dokter gigi |
-| JUMLAH_DOKTER_SPESIALIS | Jumlah dokter spesialis |
-| JUMLAH_DOKTER_UMUM | jumlah dokter umum |
+| TIPE | Type of area (Regency/City) |
+| KABUPATEN_KOTA | Region Name |
+| JUMLAH_PENDUDUK | Total Population |
+| JUMLAH_TENAGA_GIZI | Number of Nutritionists |
+| JUMLAH_TENAGA_FARMASI | Number of Pharmaceutical Personel |
+| JUMLAH_BIDAN | Number of Midwives |
+| JUMLAH_PERAWAT | Number of Nurses |
+| JUMLAH_DOKTER_GIGI | Number of Dentists |
+| JUMLAH_DOKTER_SPESIALIS | Number of Specialist Doctors |
+| JUMLAH_DOKTER_UMUM | Number of General Practitioners |
 
 ---
 
 ## 🔧 Tools
 - SQL
 - Google BigQuery
-- Google Collab
 
 ---
 
-## 🔍 Hasil Analisis
-Ringkasan Data
-- Total Tenaga Kesehatan: 124,757 orang
-- Total Penduduk: 37,032,410 jiwa
-- Total Kabupaten/Kota: 35 daerah
-- Rata-rata Dokter Umum: 309 dokter per daerah
+## 🔍 Analysis Results
+Data Summary
+- Total Healthcare Workers: 124,757 people
+- Total Population: 37,032,410 people
+- Total Regencies/Cities: 35 regions
+- Average General Practitioners: 309 doctors per region
 
-| Daerah | Jumlah Penduduk | Mencukupi |
+| Region | Population | Sufficient |
 |---|---|---|
 | Surakarta | 1.648 | ✅ |
 | Magelang | 1.479 | ✅ |
 | Semarang | 1.283 | ✅ |
 
-- **Hanya** 3 dari 35 daerah (8.6%) yang memenuhi standar WHO!
+- **Only** 3 out of 35 regions (8.6%) meet WHO standards!
 
-| Kota di Jawa Tengah | Dokter Spesialis |
+| Cities in Central Java | Specialist Doctor |
 |---|---|
 | Semarang | 952 |
 | Surakarta | 686 |
@@ -77,46 +77,56 @@ Ringkasan Data
 | Tegal | 60 |
 | Pekalongan | 59 |
 
-- Kota Semarang dominasi dengan **952 dokter spesialis**
+- The city of Semarang is dominated by **952 specialist doctors**
 
 ---
 
 ## 💡 Key Insights
-1. **🚨 Krisis Dokter yang Serius**
+1. **🚨 Serious Doctor Crisis**
 
-91.4% daerah di Jawa Tengah belum memenuhi standar WHO (1 dokter per 1.000 penduduk). Dari 35 daerah, hanya 3 yang lolos — semuanya kota besar. Tidak ada satu pun kabupaten yang memenuhi standar.
+91.4% of regions in Central Java have not met the WHO standard (1 doctor per 1,000 inhabitants). Out of 35 regions, only 3
+passed, all of which are major cities. Not a single regency meets the standard.
 
-2. **🏙️ Kesenjangan Kota vs Kabupaten**
+2. **🏙️ Urban vs. Rural Disparities**
 
-Seluruh daerah yang rasionya mencukupi adalah kota. Kabupaten — yang mayoritas penduduknya tinggal di sana — justru paling kekurangan dokter.
+All areas with an adequate ratio are cities. Regencies — where the majority of the population resides — actually have the
+greatest shortage of doctors.
 
 3. **🏥 Dominasi Kota Semarang**
 
-Kota Semarang mendominasi hampir semua indikator: dokter umum terbanyak (2.130), spesialis terbanyak (952), dan perawat terbanyak (7.799). Ini mencerminkan konsentrasi layanan kesehatan yang tidak merata.
+The city of Semarang dominates nearly all indicators:
+- the highest number of general practitioners (2,130)
+- the highest number of specialists (952)
+- the highest number of nurses (7,799)
+- This reflects an uneven concentration of healthcare services.
 
-4. **🔬 Dokter Spesialis Sangat Terkonsentrasi**
+4. **🔬 The Specialist Doctor Is Highly Focused**
 
-Lebih dari 80% dokter spesialis di kota-kota Jawa Tengah hanya ada di Semarang dan Surakarta. Daerah lain sangat bergantung pada rujukan ke dua kota ini.
+More than 80% of specialist doctors in the cities of Central Java are only found in Semarang and Surakarta. Other areas
+are highly dependent on referrals to these two cities.
    
-5. **💪 Perawat Adalah Tulang Punggung**
+5. **💪 Nurses Are the Backbone**
 
-Komposisi terbesar tenaga kesehatan adalah perawat. Di daerah kekurangan dokter, perawatlah yang menopang keberlangsungan layanan kesehatan masyarakat.
+The largest composition of healthcare workers is nurses. In areas with a shortage of doctors, it is the nurses who support
+the continuity of public health services.
    
-6. **🗺️ Daerah Perbatasan Paling Rentan**
+6. **🗺️ The Most Vulnerable Border Areas**
 
-Kab. Rembang, Kab. Batang, dan Kab. Blora memiliki rasio dokter terendah — penduduk banyak, dokter sangat sedikit. Daerah-daerah ini membutuhkan perhatian prioritas.
+Rembang Regency, Batang Regency, and Blora Regency have the lowest doctor-to-population ratios — a large population with
+very few doctors. These areas require priority attention.
 
 ---
 
-## 📈 Rekomendasi
-1. Program dokter daerah terpencil perlu diperkuat untuk kabupaten-kabupaten dengan rasio terendah
-2. Insentif khusus bagi dokter yang mau bertugas di luar kota besar
-3. Peningkatan kapasitas Puskesmas di kabupaten sebagai garda terdepan layanan kesehatan
-4. Pemerataan dokter spesialis ke kota-kota kecil agar tidak semua pasien harus dirujuk ke Semarang/Surakarta
+## 📈 Recommendations
+1. The rural doctor program needs to be strengthened for regencies with the lowest ratios.
+2. Special incentives for doctors willing to serve outside major cities.
+3. Capacity building of health centers in regencies as the frontline of healthcare services.
+4. Equal distribution of specialist doctors to smaller towns so that not all patients have to be referred to
+Semarang/Surakarta.
 
 ---
 
 ## 👤 Author
-Nama  : Dwi Farhan  
+Name  : Dwi Farhan  
 Email : mighty.coord@gmail.com  
 Linkedin : linkedin.com/in/dwi-farhan
