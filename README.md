@@ -23,26 +23,27 @@ Standar WHO menetapkan minimal 1 dokter per 1.000 penduduk sebagai ambang batas 
 ---
 
 ## 📊 Dataset
-Informasi: Detail
----
-Nama Dataset: Jumlah Tenaga Kesehatan Jawa TengahTahun2022
----
-Jumlah Baris: 35 daerah (29 Kabupaten + 6 Kota)
----
-Sumber: Data Kesehatan Provinsi Jawa Tengah
----
+| Informasi | Detail |
+|---|---|
+| Nama Dataset | Jumlah Tenaga Kesehatan Jawa Tengah |
+| Tahun | 2022 |
+| Jumlah Baris | 35 Daerah (29 Kabupaten + 6 Kota) |
+| Sumber | Data Kesehatan Provinsi Jawa Tengah |
 
 Kolom Dataset:
-TIPE: Jenis daerah (Kab/Kota)
-KABUPATEN_KOTA: Nama daerah
-JUMLAH_PENDUDUK: Total penduduk
-JUMLAH_TENAGA_GIZI: Jumlah ahli gizi
-JUMLAH_TENAGA_FARMASI: Jumlah tenaga farmasi
-JUMLAH_BIDAN: Jumlah bidan
-JUMLAH_PERAWAT: Jumlah perawat
-JUMLAH_DOKTER_GIGI: Jumlah dokter gigi
-JUMLAH_DOKTER_SPESIALIS: Jumlah dokter spesialis
-JUMLAH_DOKTER_UMUM: jumlah dokter umum
+| Informasi | Detail |
+|---|---|
+| Kolom | Keterangan |
+| TIPE | Jenis daerah (Kab/Kota) |
+| KABUPATEN_KOTA | Nama Daerah |
+| JUMLAH_PENDUDUK | Total Penduduk |
+| JUMLAH_TENAGA_GIZI | Jumlah ahli gizi |
+| JUMLAH_TENAGA_FARMASI | Jumlah tenaga farmasi |
+| JUMLAH_BIDAN | Jumlah bidan |
+| JUMLAH_PERAWAT | Jumlah perawat |
+| JUMLAH_DOKTER_GIGI | Jumlah dokter gigi |
+| JUMLAH_DOKTER_SPESIALIS | Jumlah dokter spesialis |
+| JUMLAH_DOKTER_UMUM | jumlah dokter umum |
 
 ---
 
