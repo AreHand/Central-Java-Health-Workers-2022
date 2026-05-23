@@ -31,9 +31,8 @@ Standar WHO menetapkan minimal 1 dokter per 1.000 penduduk sebagai ambang batas 
 | Sumber | Data Kesehatan Provinsi Jawa Tengah |
 
 Kolom Dataset:
-| Informasi | Detail |
-|---|---|
 | Kolom | Keterangan |
+|---|---|
 | TIPE | Jenis daerah (Kab/Kota) |
 | KABUPATEN_KOTA | Nama Daerah |
 | JUMLAH_PENDUDUK | Total Penduduk |
@@ -152,6 +151,6 @@ Kota Pekalongan: 59 Dokter Spesialis
 ---
 
 ## 👤 Author
-Name     : Dwi Farhan
-Email    : mighty.coord@gmail.com
-LinkedIn : linkedin.com/in/dwi-farhan
+Nama  : Dwi Farhan  
+Email : mighty.coord@gmail.com  
+Linkedin : linkedin.com/in/dwi-farhan
