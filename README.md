@@ -55,25 +55,24 @@ Kolom Dataset:
 ---
 
 ## 📁 Struktur Repository
-jateng-health-analytics/
-│
-├── README.md                          ← Dokumentasi project
-├── nakes_jateng_clean.csv             ← Dataset bersih siap pakai
-├── nakes_jateng_queries.sql           ← Semua query BigQuery
-│
-└── output/
-    ├── query_q5_rasio_dokter.csv      ← Hasil analisis rasio dokter
-    ├── query_q7_spesialis_kota.csv    ← Spesialis per kota
-    └── query_bonus_ranking.csv        ← Ranking semua daerah
+
+| File | Keterangan |
+|------|-----------|
+| `nakes_jateng_clean.csv` | Dataset bersih siap pakai |
+| `nakes_jateng_queries.sql` | Semua query BigQuery |
+| `output/query_q5_rasio_dokter.csv` | Hasil analisis rasio dokter |
+| `output/query_q7_spesialis_kota.csv` | Spesialis per kota |
+| `output/query_bonus_ranking.csv` | Ranking semua daerah |
 
 ---
 
 ## 🔍 Hasil Analisis
 Ringkasan Data
-Total Tenaga Kesehatan: 124,757 orang
-Total Penduduk; 37,032,410 jiwa
-Total Kabupaten/Kota: 35 daerah
-Rata-rata Dokter Umum: 309 dokter per daerah
+- Total Tenaga Kesehatan: 124,757 orang
+- Total Penduduk: 37,032,410 jiwa
+- Total Kabupaten/Kota: 35 daerah, Hanya **3 dari 35 daerah** yang memenuhi standar rasio dokter WHO
+- Rata-rata Dokter Umum: 309 dokter per daerah
+- Kota Semarang dominasi dengan **952 dokter spesialis**
 
 Q1 — Total Tenaga Kesehatan Jawa Tengah
 SELECT SUM(JUMLAH_TENAGA_GIZI + JUMLAH_TENAGA_FARMASI + JUMLAH_BIDAN
