@@ -59,7 +59,7 @@ Ringkasan Data
 - Total Penduduk: 37,032,410 jiwa
 - Total Kabupaten/Kota: 35 daerah
 - Rata-rata Dokter Umum: 309 dokter per daerah
-
+|---|---|
 | Kota Surakarta | 1.648 ✅Mencukupi |
 | Kota Magelang | 1.479 ✅Mencukupi |
 | Kota Semarang | 1.283 ✅Mencukupi |
@@ -67,6 +67,7 @@ Ringkasan Data
 - **Hanya** 3 dari 35 daerah (8.6%) yang memenuhi standar WHO!
 
 ## Dokter Spesialis di Kota-kota Jawa Tengah
+|---|---|
 | Semarang | 952 |
 | Surakarta | 686 |
 | magelang | 135 |
